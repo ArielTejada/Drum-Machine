@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: white;
+    --color2: black;
+    --color3: lightblue;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+body {
+background-color: var(--color3);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#page-title {
+    margin: 5rem auto 0 auto;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    width: 40%;
+    border: 2px solid var(--color1);
+    border-radius: 10px;
+}
+
+#drum-machine {
+    border: 2px solid var(--color1);
+    border-radius: 10px;
+    padding: 5px;
+    width: 60%;
+    height: 100%;
+    margin: 3rem auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+#drumset-slot {
+    width: 49%;
+    display: inline-block;
+    margin-right: 5px;
+    border: 2px solid var(--color2);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.drum-pad-section {
+    display: block;
+    width: 100%;
+}
+
+.drum-pad {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+    padding: 20px;
+    width: 20%;
+    background-color: rgb(93, 158, 201);
+}
+
+.drum-pad:hover {
+background-color: rgb(66, 111, 141);
+cursor: pointer;
+}
+
+#display-slot {
+    width: 49%;
+    height: 250px;
+    display: inline-block;
+    margin: 0;
+    border: 2px solid var(--color2);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#display {
+    display: block;
+    border: 2px solid var(--color1);
+    border-radius: 10px;
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#power, #bank {
+    border: 2px solid var(--color2);
+    border-radius: 2px;
+    width: 10%;
+    height: 20px;
+}
+
+.switch {
+    margin: 0;
+    padding: 0;
+    width: 55%;
+    height: 100%;
+    background-color: var(--color2);
+}
